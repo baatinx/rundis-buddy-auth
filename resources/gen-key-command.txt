@@ -1,0 +1,5 @@
+;; http://rundis.github.io/blog/2015/buddy_auth_part1.html
+;; You’ll be asked to enter a passphrase in both steps below. Keep it safe !
+
+openssl genrsa -aes128 -out auth_privkey.pem 2048
+openssl rsa -pubout -in auth_privkey.pem -out auth_pubkey.pem
